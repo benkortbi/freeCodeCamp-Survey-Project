@@ -24,6 +24,12 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
+#survey-form {
+	position: relative;
+	background-color: var(--primary);
+	padding: 1rem;
+	margin: 2rem auto;
+}
 /**Adjusting Background**/
 @media (min-width: 769px) {
 	body {
@@ -31,7 +37,10 @@ body {
 				rgba(43, 42, 76, 0.9),
 				rgba(43, 42, 76, 0.9)
 			),
-			url(./assets/backgroundLg.webp);
+			url(../assets/backgroundLg.webp);
+	}
+	#survey-form {
+		max-width: 700px;
 	}
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -40,7 +49,10 @@ body {
 				rgba(43, 42, 76, 0.9),
 				rgba(43, 42, 76, 0.9)
 			),
-			url(./assets/backgroundMd.webp);
+			url(../assets/backgroundMd.webp);
+	}
+	#survey-form {
+		max-width: 500px;
 	}
 }
 @media (max-width: 480px) {
@@ -49,7 +61,11 @@ body {
 				rgba(43, 42, 76, 0.9),
 				rgba(43, 42, 76, 0.9)
 			),
-			url(./assets/backgroundSm.webp);
+			url(../assets/backgroundSm.webp);
+	}
+	#survey-form {
+		max-width: 95%;
+		margin-inline: auto;
 	}
 }
 
@@ -70,15 +86,6 @@ body {
 	text-align: center;
 }
 
-#survey-form {
-	position: relative;
-	background-color: var(--primary);
-	padding: 1rem;
-	min-width: 300px;
-	width: 70vw;
-	max-width: 700px;
-	margin: 2rem auto;
-}
 fieldset {
 	margin-bottom: 1rem;
 	position: relative;
